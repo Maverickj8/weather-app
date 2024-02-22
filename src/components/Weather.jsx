@@ -7,7 +7,7 @@ export default function Weather() {
   async function getLocation() {
     try {
       const response = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=82c240aac3c244fcb76120241242102&q=${location}`
+        `https://api.weatherapi.com/v1/current.json?key=82c240aac3c244fcb76120241242102&q=${location}`
       );
       const data = await response.json();
       console.log(data);
